@@ -18,15 +18,15 @@ const { Octokit } = require("@octokit/rest");
 const axios = require("axios");
 
 // ─── Clients ────────────────────────────────────────────────────────────────
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, baseURL: 'http://localhost:11434/' });
-const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+const openai = new OpenAI({ apiKey: 'ollama-token', baseURL: 'http://localhost:11434/' });
+const octokit = new Octokit({ auth: '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' });
 
 // ─── Config ─────────────────────────────────────────────────────────────────
 const config = {
   jira: {
     baseUrl: 'https://auto-fix-agent.atlassian.net/',       // e.g. https://yourcompany.atlassian.net
     email: 'sheikh.mavin@tothenew.com',  //https://id.atlassian.com/manage-profile/security/api-tokens
-    apiToken: process.env.jira_token,
+    apiToken: 'ATATT3xFfGF0G7QItAXTQiZ-n_BG5nWw_93MMEsRXjE-kGaL5lHOs0R5fL2GE7n1EV-dKKFscRyjUIrVCHAvO_1gI5wzz2ZwWXp1Y59pyVkXAZAhNlfpLdmKKJiYT-4OUIaqKJP4MrtdgQu3PQXGP5XwD5nteVZeMizpE9shw_ETAo1ojATrw3g=5F2F9786',
   },
   github: {
     owner: 'mavin-ttn', 
