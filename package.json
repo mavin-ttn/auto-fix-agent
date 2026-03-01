@@ -1,0 +1,16 @@
+{
+    "name": "bug-fix-agent",
+    "version": "1.0.0",
+    "description": "Agentic AI: reads Jira bug tickets, fixes code with GPT-4, opens GitHub PRs",
+    "main": "agent.js",
+    "scripts": {
+      "fix": "node agent.js"
+    },
+    "dependencies": {
+      "@octokit/rest": "^21.0.0",
+      "axios": "^1.7.0",
+      "dotenv": "^16.4.0",
+      "openai": "^4.52.0"
+    }
+  }
+  
