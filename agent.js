@@ -26,11 +26,11 @@ const config = {
   jira: {
     baseUrl: 'https://auto-fix-agent.atlassian.net/',       // e.g. https://yourcompany.atlassian.net
     email: 'sheikh.mavin@tothenew.com',  //https://id.atlassian.com/manage-profile/security/api-tokens
-    apiToken: 'ATATT3xFfGF0G7QItAXTQiZ-n_BG5nWw_93MMEsRXjE-kGaL5lHOs0R5fL2GE7n1EV-dKKFscRyjUIrVCHAvO_1gI5wzz2ZwWXp1Y59pyVkXAZAhNlfpLdmKKJiYT-4OUIaqKJP4MrtdgQu3PQXGP5XwD5nteVZeMizpE9shw_ETAo1ojATrw3g=5F2F9786',
+    apiToken: process.env.jira_token,
   },
   github: {
-    owner: process.env.GITHUB_OWNER, 
-    repo: process.env.GITHUB_REPO,            // repo name
+    owner: 'mavin-ttn', 
+    repo: 'auto-fix-agent',            // repo name
     baseBranch: process.env.GITHUB_BASE_BRANCH || "main",
     codeFilePath: process.env.CODE_FILE_PATH || "index.js",
   },
